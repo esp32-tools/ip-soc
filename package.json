@@ -1,0 +1,27 @@
+{
+  "name": "@esp32-tools/ip-soc",
+  "version": "0.1.0",
+  "description": "Remote/IP SOTA battery SOC estimator (`ip soc code`: 4-state 2RC+hysteresis AEKF, RTS smoother, cell-ID) and high-res history store (`ip soc history`) paired with esp32-tools/od-soc",
+  "type": "module",
+  "main": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts",
+    "./protocol": "./src/protocol.ts",
+    "./estimator": "./src/ipEstimator.ts",
+    "./history": "./src/ipHistory.ts"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.ts"
+  },
+  "keywords": [
+    "esp32",
+    "battery",
+    "soc",
+    "soh",
+    "kalman-filter",
+    "ekf",
+    "rts-smoother",
+    "bms"
+  ],
+  "license": "MIT"
+}
